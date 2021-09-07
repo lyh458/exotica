@@ -61,7 +61,7 @@ while True:
         # Extract the positions of the individual links
         problem.update(q)
         for i in range(7):
-            name = "lwr_arm_" + str(i) + "_link"
+            name = "iiwa_link" + str(i)
             position = problem.get_scene().fk(name).get_translation()
             print(name, position)
 

@@ -46,7 +46,7 @@ class Example(object):
           marker that defines the GazeTarget appears outside the cone. 
         """
         marker = Marker()
-        marker.header.frame_id = 'exotica/lwr_arm_6_link'
+        marker.header.frame_id = 'exotica/iiwa_link_7'
         marker.header.stamp = rospy.Time.now()
         marker.action = 0
         marker.pose.orientation.w = 1

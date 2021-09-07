@@ -9,7 +9,7 @@
         <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
         <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
         <Links>
-          <Link Name="EffPoint" Parent="lwr_arm_6_link" Transform="0 0 0.5"/>
+          <Link Name="EffPoint" Parent="iiwa_link_7" Transform="0 0 0.5"/>
           <Link Name="LookAtTarget" Transform="1 1 2"/>
         </Links>
       </Scene>
@@ -19,9 +19,9 @@
       <LookAt Name="LookAt">
         <EndEffector>
           <!-- EndEffector #0 => Frame on robot to orient -->
-          <Frame Link="EffPoint" Base="lwr_arm_6_link"/>
+          <Frame Link="EffPoint" Base="iiwa_link_7"/>
           <!-- EndEffector #1 => Target to look at, in relative frame of EffPoint -->
-          <Frame Link="LookAtTarget" Base="lwr_arm_6_link"/>
+          <Frame Link="LookAtTarget" Base="iiwa_link_7"/>
           <!-- EndEffector #2 => Target to look at, in world frame (convenience frame) -->
           <Frame Link="LookAtTarget"/>
         </EndEffector>

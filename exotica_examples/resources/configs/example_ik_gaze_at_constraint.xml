@@ -19,7 +19,7 @@
     <Maps>
       <GazeAtConstraint Name="Gaze" Theta = "0.523599"> <!--Theta = 30 degs-->
         <EndEffector>
-          <Frame Link="GazeAtTarget" Base="lwr_arm_6_link"/>
+          <Frame Link="GazeAtTarget" Base="iiwa_link_7"/>
         </EndEffector>
       </GazeAtConstraint>
     </Maps>

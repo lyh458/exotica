@@ -9,16 +9,16 @@ scene = solver.get_problem().get_scene()
 # Update the scene before calling FK or Jacobian!
 scene.update([0] * 7)
 print("FK for the end effector:")
-print(scene.fk('lwr_arm_7_link'))
+print(scene.fk('iiwa_link_7'))
 
 print("Jacobian for the end effector:")
-print(scene.jacobian('lwr_arm_7_link'))
+print(scene.jacobian('iiwa_link_7'))
 
 print("FK for a relative frame:")
 scene.update([0.5] * 7)
-print(scene.fk('lwr_arm_7_link', 'lwr_arm_3_link'))
+print(scene.fk('iiwa_link_7', 'iiwa_link_3'))
 print("FK for a relative frame with custom offsets:")
-print(scene.fk('lwr_arm_7_link', exo.KDLFrame(
-    [0, 0, 0.2, 0, 0, 0, 1]), 'lwr_arm_3_link', exo.KDLFrame()))
+print(scene.fk('iiwa_link_7', exo.KDLFrame(
+    [0, 0, 0.2, 0, 0, 0, 1]), 'iiwa_link_3', exo.KDLFrame()))
 
 # FK and Jacobian have the same overloads

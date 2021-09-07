@@ -35,15 +35,15 @@ void run()
 {
     Server::InitRos(std::shared_ptr<ros::NodeHandle>(new ros::NodeHandle("~")));
 
-    // Scene using joint group 'arm'
+    // Scene using joint group 'manipulator'
     Initializer scene("Scene", {{"Name", std::string("MyScene")},
-                                {"JointGroup", std::string("arm")},
+                                {"JointGroup", std::string("manipulator")},
                                 {"URDF", std::string("{exotica_examples}/resources/robots/iiwa7.urdf")},
                                 {"SRDF", std::string("{exotica_examples}/resources/robots/iiwa7.srdf")}});
     // End-effector task map with two position frames
     Initializer map("exotica/EffFrame", {{"Name", std::string("Position")},
                                          {"EndEffector", std::vector<Initializer>({
-                                                             Initializer("Frame", {{"Link", std::string("lwr_arm_6_link")}, {"LinkOffset", Eigen::VectorTransform(0, 0, 0, 0.7071067811865476, -4.3297802811774664e-17, 0.7071067811865475, 4.3297802811774664e-17)}}),
+                                                             Initializer("Frame", {{"Link", std::string("iiwa_link_7")}, {"LinkOffset", Eigen::VectorTransform(0, 0, 0, 0.7071067811865476, -4.3297802811774664e-17, 0.7071067811865475, 4.3297802811774664e-17)}}),
                                                          })}});
     Initializer cost("exotica/Task", {{"Task", std::string("Position")}});
     Eigen::VectorXd W(7);
