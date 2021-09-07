@@ -7,16 +7,16 @@
 
     <PlanningScene>
       <Scene>
-        <JointGroup>arm</JointGroup>
-        <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-        <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+        <JointGroup>manipulator</JointGroup>
+        <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+        <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
       </Scene>
     </PlanningScene>
 
     <Maps>
       <EffFrame Name="Frame">
         <EndEffector>
-            <Frame Link="lwr_arm_6_link" LinkOffset="0 0 0.2 0.7071 0  0.7071 0" BaseOffset="0.6 -0.1 0.5" />
+            <Frame Link="iiwa_link_7" LinkOffset="0 0 0.2 0.7071 0  0.7071 0" BaseOffset="0.6 -0.1 0.5" />
         </EndEffector>
       </EffFrame>
     </Maps>

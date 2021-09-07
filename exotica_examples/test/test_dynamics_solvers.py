@@ -11,8 +11,8 @@ roslib.load_manifest(PKG)  # This line is not needed with Catkin.
 class TestDynamicsSolver(unittest.TestCase):
     def test_double_integrator_dynamics_solver(self):
         check_dynamics_solver_derivatives('exotica/DoubleIntegratorDynamicsSolver',
-                                          u'{exotica_examples}/resources/robots/lwr_simplified.urdf',
-                                          u'{exotica_examples}/resources/robots/lwr_simplified.srdf',
+                                          u'{exotica_examples}/resources/robots/iiwa7.urdf',
+                                          u'{exotica_examples}/resources/robots/iiwa7.srdf',
                                           u'arm')
 
     def test_cartpole_dynamics_solver(self):
@@ -29,14 +29,14 @@ class TestDynamicsSolver(unittest.TestCase):
 
     def test_pinocchio_dynamics_solver(self):
         check_dynamics_solver_derivatives('exotica/PinocchioDynamicsSolver',
-                                          u'{exotica_examples}/resources/robots/lwr_simplified.urdf',
-                                          u'{exotica_examples}/resources/robots/lwr_simplified.srdf',
+                                          u'{exotica_examples}/resources/robots/iiwa7.urdf',
+                                          u'{exotica_examples}/resources/robots/iiwa7.srdf',
                                           u'arm')
 
     def test_pinocchio_gravity_compensation_dynamics_solver(self):
         check_dynamics_solver_derivatives('exotica/PinocchioDynamicsSolverWithGravityCompensation',
-                                          u'{exotica_examples}/resources/robots/lwr_simplified.urdf',
-                                          u'{exotica_examples}/resources/robots/lwr_simplified.srdf',
+                                          u'{exotica_examples}/resources/robots/iiwa7.urdf',
+                                          u'{exotica_examples}/resources/robots/iiwa7.srdf',
                                           u'arm')
 
 

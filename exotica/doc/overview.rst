@@ -98,9 +98,9 @@ Referring back to the example inverse kinematics problem, the planning scene con
 
     <PlanningScene>
         <Scene>
-            <JointGroup>arm</JointGroup>
-            <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-            <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+            <JointGroup>manipulator</JointGroup>
+            <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+            <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
         </Scene>
     </PlanningScene>
 
