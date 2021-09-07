@@ -13,13 +13,13 @@ def setup_problem():
 
     # Setup the scene
     scene_init = exo.Initializers.SceneInitializer()
-    scene_init[1]['JointGroup'] = 'arm'
+    scene_init[1]['JointGroup'] = 'manipulator'
     scene_init[1]['URDF'] = '{exotica_examples}/resources/robots/iiwa7.urdf'
     scene_init[1]['SRDF'] = '{exotica_examples}/resources/robots/iiwa7.srdf'
 
     # Setup task maps
     eff_init = exo.Initializers.FrameInitializer()
-    eff_init[1]['Link'] = 'lwr_arm_6_link'
+    eff_init[1]['Link'] = 'iiwa_link_7'
     eff_init[1]['LinkOffset'] = np.array([0, 0, 0, 0.7071067811865476, -4.3297802811774664e-17,  0.7071067811865475, 4.3297802811774664e-17])
 
     eff_frame_map_init = exo.Initializers.EffFrameInitializer()

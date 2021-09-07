@@ -21,7 +21,7 @@
       </EffFrame>
       <EffBox Name="EffBox" Debug="1">
         <EndEffector>
-          <FrameWithBoxLimits Link="lwr_arm_6_link" XLim="0.5 0.75" YLim="-0.1 0.1" ZLim="0.25 0.65"/>
+          <FrameWithBoxLimits Link="iiwa_link_7" XLim="0.5 0.75" YLim="-0.1 0.1" ZLim="0.25 0.65"/>
         </EndEffector>
       </EffBox>
     </Maps>

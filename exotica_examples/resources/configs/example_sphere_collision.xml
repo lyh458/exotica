@@ -25,18 +25,18 @@
         <Precision>0.1</Precision>
         <ReferenceFrame>exotica/world_frame</ReferenceFrame>
         <EndEffector>
-          <Frame Link="lwr_arm_7_link" Radius="0.1" Group="Robot" />
           <Frame Link="iiwa_link_7" Radius="0.1" Group="Robot" />
-          <Frame Link="lwr_arm_5_link" Radius="0.1" Group="Robot" LinkOffset="0 0 0.1" />
-          <Frame Link="lwr_arm_5_link" Radius="0.1" Group="Robot" />
-          <Frame Link="lwr_arm_4_link" Radius="0.1" Group="Robot" LinkOffset="0 0 0.1" />
-          <Frame Link="lwr_arm_4_link" Radius="0.1" Group="Robot" />
-          <Frame Link="lwr_arm_3_link" Radius="0.1" Group="Robot" LinkOffset="0 0 0.1" />
-          <Frame Link="lwr_arm_3_link" Radius="0.1" Group="Robot" />
-          <Frame Link="lwr_arm_2_link" Radius="0.1" Group="Robot" LinkOffset="0 0 0.1" />
-          <Frame Link="lwr_arm_2_link" Radius="0.1" Group="Robot" />
-          <Frame Link="lwr_arm_1_link" Radius="0.1" Group="Robot" LinkOffset="0 0 0.1" />
-          <Frame Link="lwr_arm_1_link" Radius="0.1" Group="Robot" />
+          <Frame Link="iiwa_link_6" Radius="0.1" Group="Robot" />
+          <Frame Link="iiwa_link_5" Radius="0.1" Group="Robot" LinkOffset="0 0 0.1" />
+          <Frame Link="iiwa_link_5" Radius="0.1" Group="Robot" />
+          <Frame Link="iiwa_link_4" Radius="0.1" Group="Robot" LinkOffset="0 0 0.1" />
+          <Frame Link="iiwa_link_4" Radius="0.1" Group="Robot" />
+          <Frame Link="iiwa_link_3" Radius="0.1" Group="Robot" LinkOffset="0 0 0.1" />
+          <Frame Link="iiwa_link_3" Radius="0.1" Group="Robot" />
+          <Frame Link="iiwa_link_2" Radius="0.1" Group="Robot" LinkOffset="0 0 0.1" />
+          <Frame Link="iiwa_link_2" Radius="0.1" Group="Robot" />
+          <Frame Link="iiwa_link_1" Radius="0.1" Group="Robot" LinkOffset="0 0 0.1" />
+          <Frame Link="iiwa_link_1" Radius="0.1" Group="Robot" />
 
           <Frame Link="Obstacle" Radius="0.15" Group="Obstacle" LinkOffset="0 -0.3 0" />
           <Frame Link="Obstacle" Radius="0.15" Group="Obstacle" LinkOffset="0 -0.2 0" />

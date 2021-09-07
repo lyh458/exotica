@@ -17,7 +17,7 @@
                 <AlwaysUpdateCollisionScene>1</AlwaysUpdateCollisionScene>
                 <Links>
                     <Link Name="CustomLink1" Transform="0.1 0 0"/>
-                    <Link Name="CustomLink2" Parent="lwr_arm_6_link" Transform="0.1 0 0"/>
+                    <Link Name="CustomLink2" Parent="iiwa_link_7" Transform="0.1 0 0"/>
                     <Link Name="CustomLink3" Parent="Obstacle" Transform="0.1 0 0"/>
                 </Links>
             </Scene>
@@ -163,7 +163,7 @@
                 <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
                 <LoadScene>{exotica_examples}/resources/scenes/example_moving_obstacle.scene</LoadScene>
                 <Links>
-                    <Link Name="CustomLink2" Parent="lwr_arm_6_link" Transform="0.1 0 0"/>
+                    <Link Name="CustomLink2" Parent="iiwa_link_7" Transform="0.1 0 0"/>
                 </Links>
             </Scene>
         </PlanningScene>

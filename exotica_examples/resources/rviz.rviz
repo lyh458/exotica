@@ -8,7 +8,6 @@ Panels:
         - /Status1
         - /RobotModel1
         - /RobotModel1/Links1
-        - /RobotModel1/Links1/iiwa_link_71
       Splitter Ratio: 0.5894039869308472
     Tree Height: 1537
   - Class: rviz/Selection
@@ -72,6 +71,11 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         iiwa_link_0:
           Alpha: 1
           Show Axes: false
@@ -113,10 +117,6 @@ Visualization Manager:
           Show Trail: true
           Value: true
         iiwa_link_ee:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        world:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -171,25 +171,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 3.0059170722961426
+      Distance: 2.698533296585083
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.02643289975821972
-        Y: -0.06673959642648697
-        Z: 0.13934500515460968
-      Focal Shape Fixed Size: true
+        X: 0.23406536877155304
+        Y: 0.10126394033432007
+        Z: 0.3428845703601837
+      Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.34979718923568726
+      Pitch: 0.07039809972047806
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.6972028613090515
+      Yaw: 0.6454049944877625
     Saved: ~
 Window Geometry:
   Displays:
