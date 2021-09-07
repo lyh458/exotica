@@ -88,7 +88,7 @@ bool testGenericInit()
 
 bool testXMLInit()
 {
-    std::string XMLstring = "<IKSolverDemoConfig><IKSolver Name=\"MySolver\"><MaxIterations>1</MaxIterations><MaxStep>0.1</MaxStep><C>1e-3</C></IKSolver><UnconstrainedEndPoseProblem Name=\"MyProblem\"><PlanningScene><Scene Name=\"MyScene\"><JointGroup>arm</JointGroup></Scene></PlanningScene><Maps><EffPosition Name=\"Position\"><Scene>MyScene</Scene><EndEffector><Frame Link=\"endeff\" /></EndEffector></EffPosition></Maps><W> 3 2 1 </W></UnconstrainedEndPoseProblem></IKSolverDemoConfig>";
+    std::string XMLstring = "<IKSolverDemoConfig><IKSolver Name=\"MySolver\"><MaxIterations>1</MaxIterations><MaxStep>0.1</MaxStep><C>1e-3</C></IKSolver><UnconstrainedEndPoseProblem Name=\"MyProblem\"><PlanningScene><Scene Name=\"MyScene\"><JointGroup>manipulator</JointGroup></Scene></PlanningScene><Maps><EffPosition Name=\"Position\"><Scene>MyScene</Scene><EndEffector><Frame Link=\"endeff\" /></EndEffector></EffPosition></Maps><W> 3 2 1 </W></UnconstrainedEndPoseProblem></IKSolverDemoConfig>";
     Initializer solver, problem;
     XMLLoader::Load(XMLstring, solver, problem, "", "", true);
     PlanningProblemPtr any_problem = Setup::CreateProblem(problem);

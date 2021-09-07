@@ -7,17 +7,17 @@
   <UnconstrainedEndPoseProblem Name="MyProblem">
     <PlanningScene>
       <Scene>
-        <JointGroup>arm</JointGroup>
-        <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-        <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+        <JointGroup>manipulator</JointGroup>
+        <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+        <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
       </Scene>
     </PlanningScene>
 
     <Maps>
       <PointToLine Name="p2l" EndPoint="0.75 0 0.5" Infinite="1" Visualise="1">
         <EndEffector>
-          <Frame Link="lwr_arm_6_link" LinkOffset="0 0 0 0.7071 0  0.7071 0" Base="world_frame"/>
-          <Frame Link="lwr_arm_6_link" LinkOffset="0 0 1"/>
+          <Frame Link="iiwa_link_7" LinkOffset="0 0 0 0.7071 0  0.7071 0" Base="world_frame"/>
+          <Frame Link="iiwa_link_7" LinkOffset="0 0 1"/>
         </EndEffector>
       </PointToLine>
     </Maps>

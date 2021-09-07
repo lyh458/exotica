@@ -1,7 +1,7 @@
 # exotica launch file and its results
 
 - cpp_aico.launch
-![cpp_aico.launch](https://cdn.jsdelivr.net/gh/lyh458/ImageRepo@main/image/1630401361943-1630401361930-cpp_aico.gif){:height="50%" width="50%"}
+![cpp_aico.launch](https://cdn.jsdelivr.net/gh/lyh458/ImageRepo@main/image/1630401361943-1630401361930-cpp_aico.gif)
 
 - cpp_ik_freebase.launch
 ![cpp_ik_freebase.launch](https://cdn.jsdelivr.net/gh/lyh458/ImageRepo@main/image/1630401551758-1630401551732-cpp_ik_freebase.gif)

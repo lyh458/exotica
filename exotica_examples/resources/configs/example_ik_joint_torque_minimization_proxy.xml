@@ -7,16 +7,16 @@
     <EndPoseProblem Name="MyProblem">
         <PlanningScene>
             <Scene>
-                <JointGroup>arm</JointGroup>
-                <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-                <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+                <JointGroup>manipulator</JointGroup>
+                <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+                <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
             </Scene>
         </PlanningScene>
 
         <Maps>
             <JointTorqueMinimizationProxy Name="JointTorqueMinimizationProxy">
                 <EndEffector>
-                    <Frame Link="lwr_arm_6_link"/>
+                    <Frame Link="iiwa_link_7"/>
                 </EndEffector>
                 <h>1 1 1 0 0 0</h>
                 <!-- <h>0 0 1 0 0 0</h> -->
@@ -24,7 +24,7 @@
             <JointPose Name="Identity"/>
             <EffPosition Name="Position">
                 <EndEffector>
-                    <Frame Link="lwr_arm_6_link"/>
+                    <Frame Link="iiwa_link_7"/>
                 </EndEffector>
             </EffPosition>
         </Maps>

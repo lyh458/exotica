@@ -23,7 +23,7 @@ An `example of manual initialization <https://github.com/ipab-slmc/exotica/blob/
         Server::InitRos(std::shared_ptr<ros::NodeHandle>(new ros::NodeHandle("~")));
 
         // Scene using joint group 'arm'
-        SceneInitializer scene("MyScene", "arm", false, "", "{exotica_examples}/resources/robots/lwr_simplified.urdf", "{exotica_examples}/resources/robots/lwr_simplified.srdf");
+        SceneInitializer scene("MyScene", "arm", false, "", "{exotica_examples}/resources/robots/iiwa7.urdf", "{exotica_examples}/resources/robots/iiwa7.srdf");
         // End-effector task map with two position frames
         EffFrameInitializer map("Position", false,
                     {FrameInitializer("lwr_arm_6_link", Eigen::VectorTransform(0, 0, 0, 0.7071067811865476, -4.3297802811774664e-17, 0.7071067811865475, 4.3297802811774664e-17))});
@@ -75,7 +75,7 @@ which here name ``scene``.
 .. code-block:: c++
 
         // Scene using joint group 'arm'
-        SceneInitializer scene("MyScene", "arm", false, "", "{exotica_examples}/resources/robots/lwr_simplified.urdf", "{exotica_examples}/resources/robots/lwr_simplified.srdf");
+        SceneInitializer scene("MyScene", "arm", false, "", "{exotica_examples}/resources/robots/iiwa7.urdf", "{exotica_examples}/resources/robots/iiwa7.srdf");
 
 We must also pass in our initialization arguments seen in the `Scene Initializer <https://github.com/ipab-slmc/exotica/blob/master/exotica_core/init/scene.in>`__ file:
 

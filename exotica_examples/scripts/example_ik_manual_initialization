@@ -14,8 +14,8 @@ def setup_problem():
     # Setup the scene
     scene_init = exo.Initializers.SceneInitializer()
     scene_init[1]['JointGroup'] = 'arm'
-    scene_init[1]['URDF'] = '{exotica_examples}/resources/robots/lwr_simplified.urdf'
-    scene_init[1]['SRDF'] = '{exotica_examples}/resources/robots/lwr_simplified.srdf'
+    scene_init[1]['URDF'] = '{exotica_examples}/resources/robots/iiwa7.urdf'
+    scene_init[1]['SRDF'] = '{exotica_examples}/resources/robots/iiwa7.srdf'
 
     # Setup task maps
     eff_init = exo.Initializers.FrameInitializer()

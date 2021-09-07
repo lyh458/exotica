@@ -7,9 +7,9 @@
 
         <PlanningScene>
             <Scene>
-                <JointGroup>arm</JointGroup>
-                <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-                <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+                <JointGroup>manipulator</JointGroup>
+                <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+                <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
                 <LoadScene>{exotica_examples}/resources/scenes/example_moving_obstacle.scene</LoadScene>
                 <Trajectories>
                     <Trajectory Link="Obstacle" File="{exotica_examples}/resources/scenes/example_static_obstacle.traj" />
@@ -26,7 +26,7 @@
         <Maps>
             <EffPosition Name="Position">
                 <EndEffector>
-                    <Frame Link="lwr_arm_6_link" Base="Obstacle"/>
+                    <Frame Link="iiwa_link_7" Base="Obstacle"/>
                 </EndEffector>
             </EffPosition>
         </Maps>
@@ -43,9 +43,9 @@
 
         <PlanningScene>
             <Scene>
-                <JointGroup>arm</JointGroup>
-                <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-                <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+                <JointGroup>manipulator</JointGroup>
+                <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+                <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
                 <LoadScene>{exotica_examples}/resources/scenes/example_moving_obstacle.scene</LoadScene>
             </Scene>
         </PlanningScene>
@@ -53,7 +53,7 @@
         <Maps>
             <EffPosition Name="Position">
                 <EndEffector>
-                    <Frame Link="lwr_arm_6_link" Base="Obstacle"/>
+                    <Frame Link="iiwa_link_7" Base="Obstacle"/>
                 </EndEffector>
             </EffPosition>
         </Maps>
@@ -70,9 +70,9 @@
 
         <PlanningScene>
             <Scene>
-                <JointGroup>arm</JointGroup>
-                <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-                <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+                <JointGroup>manipulator</JointGroup>
+                <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+                <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
                 <LoadScene>{exotica_examples}/resources/scenes/example_moving_obstacle.scene</LoadScene>
                 <Trajectories>
                     <Trajectory Link="Obstacle" File="{exotica_examples}/resources/scenes/example_static_obstacle.traj" />
@@ -83,7 +83,7 @@
         <Maps>
             <EffPosition Name="Position">
                 <EndEffector>
-                    <Frame Link="lwr_arm_6_link" Base="Obstacle"/>
+                    <Frame Link="iiwa_link_7" Base="Obstacle"/>
                 </EndEffector>
             </EffPosition>
         </Maps>
@@ -100,9 +100,9 @@
 
         <PlanningScene>
             <Scene>
-                <JointGroup>arm</JointGroup>
-                <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-                <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+                <JointGroup>manipulator</JointGroup>
+                <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+                <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
                 <LoadScene>{exotica_examples}/resources/scenes/example_moving_obstacle.scene</LoadScene>
                 <AlwaysUpdateCollisionScene>1</AlwaysUpdateCollisionScene>
             </Scene>
@@ -111,7 +111,7 @@
         <Maps>
             <EffPosition Name="Position">
                 <EndEffector>
-                    <Frame Link="lwr_arm_6_link" Base="Obstacle"/>
+                    <Frame Link="iiwa_link_7" Base="Obstacle"/>
                 </EndEffector>
             </EffPosition>
         </Maps>
@@ -128,9 +128,9 @@
 
         <PlanningScene>
             <Scene>
-                <JointGroup>arm</JointGroup>
-                <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-                <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+                <JointGroup>manipulator</JointGroup>
+                <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+                <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
                 <LoadScene>{exotica_examples}/resources/scenes/example_moving_obstacle.scene</LoadScene>
                 <Links>
                     <Link Name="CustomLink1" Transform="0.1 0 0"/>
@@ -141,7 +141,7 @@
         <Maps>
             <EffPosition Name="Position">
                 <EndEffector>
-                    <Frame Link="lwr_arm_6_link" Base="Obstacle"/>
+                    <Frame Link="iiwa_link_7" Base="Obstacle"/>
                 </EndEffector>
             </EffPosition>
         </Maps>
@@ -158,9 +158,9 @@
 
         <PlanningScene>
             <Scene>
-                <JointGroup>arm</JointGroup>
-                <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-                <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+                <JointGroup>manipulator</JointGroup>
+                <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+                <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
                 <LoadScene>{exotica_examples}/resources/scenes/example_moving_obstacle.scene</LoadScene>
                 <Links>
                     <Link Name="CustomLink2" Parent="lwr_arm_6_link" Transform="0.1 0 0"/>
@@ -171,7 +171,7 @@
         <Maps>
             <EffPosition Name="Position">
                 <EndEffector>
-                    <Frame Link="lwr_arm_6_link" Base="Obstacle"/>
+                    <Frame Link="iiwa_link_7" Base="Obstacle"/>
                 </EndEffector>
             </EffPosition>
         </Maps>
@@ -188,9 +188,9 @@
 
         <PlanningScene>
             <Scene>
-                <JointGroup>arm</JointGroup>
-                <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-                <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+                <JointGroup>manipulator</JointGroup>
+                <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+                <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
                 <LoadScene>{exotica_examples}/resources/scenes/example_moving_obstacle.scene</LoadScene>
                 <Links>
                     <Link Name="CustomLink3" Parent="Obstacle" Transform="0.1 0 0"/>
@@ -201,7 +201,7 @@
         <Maps>
             <EffPosition Name="Position">
                 <EndEffector>
-                    <Frame Link="lwr_arm_6_link" Base="Obstacle" BaseOffset="0.5 0 0"/>
+                    <Frame Link="iiwa_link_7" Base="Obstacle" BaseOffset="0.5 0 0"/>
                 </EndEffector>
             </EffPosition>
         </Maps>

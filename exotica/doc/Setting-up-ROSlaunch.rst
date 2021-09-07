@@ -21,8 +21,8 @@ ROSlaunch file.
         <arg unless="$(arg debug)" name="launch_prefix" value="" />
         <arg     if="$(arg debug)" name="launch_prefix" value="xterm -e gdb --args" />
 
-        <param name="robot_description" textfile="$(find exotica_examples)/resources/robots/lwr_simplified.urdf" />
-        <param name="robot_description_semantic" textfile="$(find exotica_examples)/resources/robots/lwr_simplified.srdf" />
+        <param name="robot_description" textfile="$(find exotica_examples)/resources/robots/iiwa7.urdf" />
+        <param name="robot_description_semantic" textfile="$(find exotica_examples)/resources/robots/iiwa7.srdf" />
 
         <node launch-prefix="$(arg launch_prefix)" pkg="exotica_examples" type="ManualInitialization" name="ExoticaManualInitializationExampleNode" output="screen" />
 
