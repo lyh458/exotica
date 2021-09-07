@@ -6,9 +6,9 @@
 <UnconstrainedEndPoseProblem Name="UnconstrainedEndPoseProblem">
     <PlanningScene>
         <Scene>
-            <JointGroup>arm</JointGroup>
-            <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-            <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+            <JointGroup>manipulator</JointGroup>
+            <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+            <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
         </Scene>
     </PlanningScene>
     <Maps>
@@ -35,9 +35,9 @@
 <UnconstrainedTimeIndexedProblem Name="UnconstrainedTimeIndexedProblem">
     <PlanningScene>
         <Scene>
-            <JointGroup>arm</JointGroup>
-            <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-            <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+            <JointGroup>manipulator</JointGroup>
+            <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+            <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
         </Scene>
     </PlanningScene>
     <Maps>
@@ -66,16 +66,16 @@
 <SamplingProblem Name="SamplingProblem">
     <PlanningScene>
         <Scene>
-            <JointGroup>arm</JointGroup>
-            <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-            <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+            <JointGroup>manipulator</JointGroup>
+            <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+            <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
         </Scene>
     </PlanningScene>
 
     <Maps>
         <Distance Name="Distance">
             <EndEffector>
-                <Frame Link="lwr_arm_6_link" LinkOffset="0 0 0.1 0.7071067811865476 -4.3297802811774664e-17  0.7071067811865475 4.3297802811774664e-17" BaseOffset="0.35 -0.2 0.9 0 0 0 1"/>
+                <Frame Link="iiwa_link_7" LinkOffset="0 0 0.1 0.7071067811865476 -4.3297802811774664e-17  0.7071067811865475 4.3297802811774664e-17" BaseOffset="0.35 -0.2 0.9 0 0 0 1"/>
             </EndEffector>
         </Distance>
     </Maps>
@@ -91,9 +91,9 @@
 <TimeIndexedSamplingProblem Name="TimeIndexedSamplingProblem">
     <PlanningScene>
         <Scene>
-            <JointGroup>arm</JointGroup>
-            <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-            <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+            <JointGroup>manipulator</JointGroup>
+            <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+            <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
             <LoadScene>{exotica_examples}/resources/scenes/example_moving_obstacle.scene</LoadScene>
             <Trajectories>
                 <Trajectory Link="Obstacle" File="{exotica_examples}/resources/scenes/example_moving_obstacle.traj" />
@@ -118,9 +118,9 @@
 <BoundedEndPoseProblem Name="BoundedEndPoseProblem">
     <PlanningScene>
         <Scene>
-            <JointGroup>arm</JointGroup>
-            <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-            <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+            <JointGroup>manipulator</JointGroup>
+            <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+            <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
         </Scene>
     </PlanningScene>
     <Maps>
@@ -147,9 +147,9 @@
 <BoundedTimeIndexedProblem Name="BoundedTimeIndexedProblem">
     <PlanningScene>
         <Scene>
-            <JointGroup>arm</JointGroup>
-            <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-            <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+            <JointGroup>manipulator</JointGroup>
+            <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+            <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
         </Scene>
     </PlanningScene>
     <Maps>
@@ -178,9 +178,9 @@
 <EndPoseProblem Name="EndPoseProblem">
     <PlanningScene>
         <Scene>
-            <JointGroup>arm</JointGroup>
-            <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-            <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+            <JointGroup>manipulator</JointGroup>
+            <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+            <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
         </Scene>
     </PlanningScene>
     <Maps>
@@ -215,9 +215,9 @@
 <TimeIndexedProblem Name="TimeIndexedProblem">
     <PlanningScene>
         <Scene>
-            <JointGroup>arm</JointGroup>
-            <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-            <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
+            <JointGroup>manipulator</JointGroup>
+            <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
+            <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
         </Scene>
     </PlanningScene>
     <Maps>
