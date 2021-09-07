@@ -92,16 +92,16 @@ in the ``exotica_examples`` folder. We can see a copy of it below:
 
         <PlanningScene>
         <Scene>
-            <JointGroup>manipulator</JointGroup>
-            <URDF>{exotica_examples}/resources/robots/iiwa7.urdf</URDF>
-            <SRDF>{exotica_examples}/resources/robots/iiwa7.srdf</SRDF>
+            <JointGroup>arm</JointGroup>
+            <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
+            <SRDF>{exotica_examples}/resources/robots/lwr_simplified.srdf</SRDF>
         </Scene>
         </PlanningScene>
         
         <Maps>
         <EffFrame Name="Position">
             <EndEffector>
-                <Frame Link="iiwa_link_7" LinkOffset="0 0 0 0.7071067811865476 -4.3297802811774664e-17  0.7071067811865475 4.3297802811774664e-17"/>
+                <Frame Link="lwr_arm_6_link" LinkOffset="0 0 0 0.7071067811865476 -4.3297802811774664e-17  0.7071067811865475 4.3297802811774664e-17"/>
             </EndEffector>
         </EffFrame>
         </Maps>
