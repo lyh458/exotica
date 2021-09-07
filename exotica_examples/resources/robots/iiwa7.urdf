@@ -4,6 +4,10 @@
 <!-- |    EDITING THIS FILE BY HAND IS NOT RECOMMENDED                                 | -->
 <!-- =================================================================================== -->
 <robot name="iiwa7">
+  <!--grey-->
+  <material name="grey">
+    <color rgba="0.5 0.5 0.5 1.0"/>
+  </material>
   <material name="Black">
     <color rgba="0.0 0.0 0.0 1.0"/>
   </material>
@@ -28,12 +32,28 @@
   <material name="White">
     <color rgba="1.0 1.0 1.0 1.0"/>
   </material>
-  <!-- Fix to world just for testing -->
-  <link name="world"/>
+  <!-- add iiwa base, but the height of the base is set to 0 by default -->
+  <link name="base">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="1 1 0"/>
+        <!-- <box size="1 1 0.04"/> -->
+      </geometry>
+      <material name="grey"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="1 1 0"/>
+        <!-- <box size="1 1 0.04"/> -->
+      </geometry>
+    </collision>
+  </link>
   <!--joint between {parent} and link_0-->
-  <joint name="world_iiwa_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="0 0 0"/>
-    <parent link="world"/>
+  <joint name="base_iiwa_joint" type="fixed">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <parent link="base"/>
     <child link="iiwa_link_0"/>
   </joint>
   <link name="iiwa_link_0">
