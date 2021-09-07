@@ -19,7 +19,7 @@
     <Maps>
       <EffFrame Name="Position">
         <EndEffector>
-          <Frame Link="lwr_arm_7_link" LinkOffset="0 0 0 0.7071 0 0.7071 0" Base="Goal"/>
+          <Frame Link="iiwa_link_7" LinkOffset="0 0 0 0.7071 0 0.7071 0" Base="Goal"/>
         </EndEffector>
       </EffFrame>
 

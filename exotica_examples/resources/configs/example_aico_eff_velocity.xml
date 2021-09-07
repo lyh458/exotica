@@ -14,7 +14,7 @@
     <Maps>
       <EffVelocity Name="EffVelocity">
         <EndEffector>
-            <Frame Link="lwr_arm_7_link" />
+            <Frame Link="iiwa_link_7" />
         </EndEffector>  
       </EffVelocity>
       <JointPose Name="Identity" />

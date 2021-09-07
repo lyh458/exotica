@@ -19,14 +19,14 @@
     <Maps>
       <LookAt Name="LookAt">
         <EndEffector>
-          <Frame Link="LookAtTarget" Base="lwr_arm_6_link"/><!-- EndEffector #1 => Target to look at, in relative frame of EffPoint -->
+          <Frame Link="LookAtTarget" Base="iiwa_link_7"/><!-- EndEffector #1 => Target to look at, in relative frame of EffPoint -->
         </EndEffector>
       </LookAt>
 
       <AvoidLookAtSphere Name="AvoidLookAtSphere" UseAsCost="0" Debug="1">
 	<EndEffector>
-	  <Frame Link="AvoidLookAtSpherePosition1" Radius="0.25" Base="lwr_arm_6_link"/>
-	  <Frame Link="AvoidLookAtSpherePosition2" Radius="0.35" Base="lwr_arm_6_link"/>
+	  <Frame Link="AvoidLookAtSpherePosition1" Radius="0.25" Base="iiwa_link_7"/>
+	  <Frame Link="AvoidLookAtSpherePosition2" Radius="0.35" Base="iiwa_link_7"/>
 	</EndEffector>
       </AvoidLookAtSphere>
       

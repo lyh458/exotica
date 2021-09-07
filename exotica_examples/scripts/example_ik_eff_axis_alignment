@@ -32,7 +32,7 @@ class Example(object):
         # Setup problem
         self.problem.get_scene().attach_object_local("Target", "", self.target_marker.position_exo)
         self.problem.get_task_maps()['Direction'].set_direction(
-            'lwr_arm_7_link', direction)
+            'iiwa_link_7', direction)
         self.problem.start_state = self.q
 
         # Solve

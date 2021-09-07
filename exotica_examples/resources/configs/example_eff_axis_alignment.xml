@@ -17,13 +17,13 @@
     <Maps>
       <EffPosition Name="Position">
         <EndEffector>
-          <Frame Link="lwr_arm_7_link" Base="Target"/>
+          <Frame Link="iiwa_link_7" Base="Target"/>
         </EndEffector>
       </EffPosition>
 
       <EffAxisAlignment Name="Direction">
         <EndEffector>
-          <Frame Direction="0 1 0" Axis="0 0 1" Link="lwr_arm_7_link"/>
+          <Frame Direction="0 1 0" Axis="0 0 1" Link="iiwa_link_7"/>
         </EndEffector>
       </EffAxisAlignment>
 

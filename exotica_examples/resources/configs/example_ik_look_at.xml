@@ -18,7 +18,7 @@
       <LookAt Name="LookAt">
         <EndEffector>
           <!-- EndEffector #1 => Target to look at, in relative frame of EffPoint -->
-          <Frame Link="LookAtTarget" Base="lwr_arm_6_link"/>
+          <Frame Link="LookAtTarget" Base="iiwa_link_7"/>
         </EndEffector>
       </LookAt>
       <JointPose Name="Regularization"/>

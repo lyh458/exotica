@@ -13,12 +13,12 @@
     <Maps>
       <EffFrame Name="Position1">
         <EndEffector>
-          <Frame Link="iiwa_link_7" BaseOffset="0.6 -0.3 0.5 0 0 0 1" LinkOffset="0 0 0.2 0.7071067811865476 0 0.7071067811865475 0"/>
+          <Frame Link="iiwa_link_6" BaseOffset="0.6 -0.3 0.5 0 0 0 1" LinkOffset="0 0 0.2 0.7071067811865476 0 0.7071067811865475 0"/>
         </EndEffector>
       </EffFrame>
       <EffFrame Name="Position2">
         <EndEffector>
-          <Frame Link="iiwa_link_7" BaseOffset="0.6 0.3 0.5 0 0 0 1" LinkOffset="0 0 0.2 0.7071067811865476 0 0.7071067811865475 0"/>
+          <Frame Link="iiwa_link_6" BaseOffset="0.6 0.3 0.5 0 0 0 1" LinkOffset="0 0 0.2 0.7071067811865476 0 0.7071067811865475 0"/>
         </EndEffector>
       </EffFrame>
       <JointLimit Name="JointLimit"/>

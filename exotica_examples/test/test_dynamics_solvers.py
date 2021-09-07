@@ -13,7 +13,7 @@ class TestDynamicsSolver(unittest.TestCase):
         check_dynamics_solver_derivatives('exotica/DoubleIntegratorDynamicsSolver',
                                           u'{exotica_examples}/resources/robots/iiwa7.urdf',
                                           u'{exotica_examples}/resources/robots/iiwa7.srdf',
-                                          u'arm')
+                                          u'manipulator')
 
     def test_cartpole_dynamics_solver(self):
         check_dynamics_solver_derivatives('exotica/CartpoleDynamicsSolver')
@@ -31,13 +31,13 @@ class TestDynamicsSolver(unittest.TestCase):
         check_dynamics_solver_derivatives('exotica/PinocchioDynamicsSolver',
                                           u'{exotica_examples}/resources/robots/iiwa7.urdf',
                                           u'{exotica_examples}/resources/robots/iiwa7.srdf',
-                                          u'arm')
+                                          u'manipulator')
 
     def test_pinocchio_gravity_compensation_dynamics_solver(self):
         check_dynamics_solver_derivatives('exotica/PinocchioDynamicsSolverWithGravityCompensation',
                                           u'{exotica_examples}/resources/robots/iiwa7.urdf',
                                           u'{exotica_examples}/resources/robots/iiwa7.srdf',
-                                          u'arm')
+                                          u'manipulator')
 
 
 if __name__ == '__main__':
