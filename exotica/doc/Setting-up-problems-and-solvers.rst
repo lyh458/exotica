@@ -29,7 +29,7 @@ example file as a guide. The code is displayed below.
         Server::InitRos(std::sharedPtr<ros::NodeHandle>(new ros::NodeHandle("~")));
 
         // Scene using joint group 'arm'
-        SceneInitializer scene("MyScene", "arm", false, "", "{exotica_examples}/resources/robots/iiwa7.urdf", "{exotica_examples}/resources/robots/iiwa7.srdf");
+        SceneInitializer scene("MyScene", "arm", false, "", "{exotica_examples}/resources/robots/lwr_simplified.urdf", "{exotica_examples}/resources/robots/lwr_simplified.srdf");
         // End-effector task map with two position frames
         EffFrameInitializer map("Position", false,
                                 {FrameInitializer("lwr_arm_6_link", Eigen::VectorTransform(0, 0, 0, 0.7071067811865476, -4.3297802811774664e-17, 0.7071067811865475, 4.3297802811774664e-17))});
@@ -154,7 +154,7 @@ Here we set up the Scene:
 .. code-block:: cpp
 
     // Scene using joint group 'arm'
-    SceneInitializer scene("MyScene", "arm", false, "", "{exotica_examples}/resources/robots/iiwa7.urdf", "
+    SceneInitializer scene("MyScene", "arm", false, "", "{exotica_examples}/resources/robots/lwr_simplified.urdf", "
 
     
 Where we give the SceneInitializer a name ("MyScene"), the name of the joint group ("arm")
