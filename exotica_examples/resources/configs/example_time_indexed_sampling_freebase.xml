@@ -11,9 +11,9 @@
     <GoalTime>3</GoalTime>
     <PlanningScene>
       <Scene>
-        <JointGroup>arm_freebase</JointGroup>
-        <URDF>{exotica_examples}/resources/robots/lwr_simplified.urdf</URDF>
-        <SRDF>{exotica_examples}/resources/robots/lwr_simplified_freebase.srdf</SRDF>
+        <JointGroup>manipulator_freebase</JointGroup>
+        <URDF>{exotica_examples}/resources/robots/iiwa7_freebase.urdf</URDF>
+        <SRDF>{exotica_examples}/resources/robots/iiwa7_freebase.srdf</SRDF>
         <LoadScene>{exotica_examples}/resources/scenes/example_moving_obstacle.scene</LoadScene>
         <Trajectories>
           <Trajectory Link="Obstacle" File="{exotica_examples}/resources/scenes/example_moving_obstacle.traj" />
