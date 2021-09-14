@@ -31,8 +31,8 @@ target_link_libraries(_pyexotica PRIVATE ${PYTHON_LIBRARIES} ${catkin_LIBRARIES}
 target_compile_options(_pyexotica PRIVATE "-Wno-deprecated-declarations")  # because we are refactoring and triggereing this ourselves.
 target_include_directories(_pyexotica PUBLIC ${catkin_INCLUDE_DIRS})
 add_dependencies(_pyexotica ${catkin_EXPORTED_TARGETS})
-set_target_properties(_pyexotica PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CATKIN_GLOBAL_PYTHON_DESTINATION}/pyexotica)
-set(PYTHON_LIB_DIR ${CATKIN_DEVEL_PREFIX}/${CATKIN_GLOBAL_PYTHON_DESTINATION}/pyexotica)
+set_target_properties(_pyexotica PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CATKIN_GLOBAL_PYTHON_DESTINATION}/pyexotica_pybind)
+set(PYTHON_LIB_DIR ${CATKIN_DEVEL_PREFIX}/${CATKIN_GLOBAL_PYTHON_DESTINATION}/pyexotica_pybind)
 add_custom_command(TARGET _pyexotica
     POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E make_directory ${PYTHON_LIB_DIR}
@@ -42,7 +42,7 @@ COMMENT "Copying library files to python directory")
 
 catkin_python_setup()
 
-install(TARGETS _pyexotica LIBRARY DESTINATION ${CATKIN_GLOBAL_PYTHON_DESTINATION}/pyexotica)
+install(TARGETS _pyexotica LIBRARY DESTINATION ${CATKIN_GLOBAL_PYTHON_DESTINATION}/pyexotica_pybind)
 
 catkin_install_python(PROGRAMS scripts/convert_moveit_scene_to_sdf DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 

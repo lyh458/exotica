@@ -2,7 +2,7 @@
 from __future__ import print_function, division
 
 import matplotlib.pyplot as plt
-import pyexotica as exo
+import pyexotica_pybind._pyexotica as exo
 from collections import OrderedDict
 
 

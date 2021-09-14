@@ -8,7 +8,7 @@ import rospy
 from visualization_msgs.msg import Marker, MarkerArray
 
 import numpy as np
-import pyexotica as exo
+import pyexotica_pybind._pyexotica as exo
 from pyexotica.publish_trajectory import *
 
 import sys

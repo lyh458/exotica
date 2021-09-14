@@ -1,7 +1,7 @@
 # import autograd.numpy as np
 # from autograd import grad, jacobian, hessian
 import numpy as np
-import pyexotica as exo
+import pyexotica_pybind._pyexotica as exo
 import unittest
 from numpy import testing as nptest
 sin = np.sin

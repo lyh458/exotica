@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import numpy as np
-import pyexotica as exo
+import pyexotica_pybind._pyexotica as exo
 from pyexotica.publish_trajectory import *
 
 exo.Setup.init_ros()

@@ -1,7 +1,7 @@
 from moveit_msgs.msg import CollisionObject
 from geometry_msgs.msg import Pose, Point
 from shape_msgs.msg import SolidPrimitive, Plane, Mesh, MeshTriangle
-import pyexotica as exo
+import pyexotica_pybind._pyexotica as exo
 
 try:
     from pyassimp import pyassimp

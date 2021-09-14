@@ -9,7 +9,7 @@ try:
 except:
     pass
 
-import pyexotica as exo
+import pyexotica_pybind._pyexotica as exo
 from numpy import array
 from pyexotica.publish_trajectory import publish_pose, sig_int_handler
 from time import time, sleep
