@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import numpy as np
-import pyexotica as exo
+import pyexotica._pyexotica as exo
 PKG = 'exotica_examples'
 import roslib; roslib.load_manifest(PKG)  # This line is not needed with Catkin.
 

@@ -3,7 +3,7 @@ from interactive_markers.interactive_marker_server import InteractiveMarkerServe
 from visualization_msgs.msg import Marker, InteractiveMarker, InteractiveMarkerControl
 from geometry_msgs.msg import Pose, Point, Quaternion
 import PyKDL as kdl
-import pyexotica as exo
+import pyexotica._pyexotica as exo
 
 __all__ = ['TargetMarker']
 

@@ -3,7 +3,7 @@ from __future__ import print_function, division
 
 import scipy.optimize as opt
 import matplotlib.pyplot as plt
-import pyexotica as exo
+import pyexotica._pyexotica as exo
 import numpy as np
 from time import time, sleep
 
@@ -93,7 +93,7 @@ print("Optimal solution found in", e-s)
 for t in range(problem.T - 1):
     problem.update(res.x[problem.N * t:problem.N * t + problem.N], t)
 
-from pyexotica.publish_trajectory import publish_trajectory
+from pyexotica_modules.publish_trajectory import publish_trajectory
 publish_trajectory(problem.X[0:7,:].T, problem.T * problem.tau, problem)
 
 # Visualize final result - the velocity should be smooth

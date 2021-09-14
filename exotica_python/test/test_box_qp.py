@@ -1,5 +1,5 @@
 import numpy as np
-import pyexotica as exo
+import pyexotica._pyexotica as exo
 import unittest
 from numpy import testing as nptest
 from scipy.optimize import minimize

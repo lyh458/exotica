@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 
-from ._pyexotica import *
+from pyexotica._pyexotica import *
 from .publish_trajectory import *
 from .tools import *
 from .interactive_cost_tuning import *

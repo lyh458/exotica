@@ -3,8 +3,8 @@ from __future__ import print_function, division
 import roslib
 import unittest
 import numpy as np
-import pyexotica as exo
-from pyexotica.testing import random_state
+import pyexotica._pyexotica as exo
+from pyexotica_modules.testing import random_state
 import sys
 
 PKG = 'exotica_examples'

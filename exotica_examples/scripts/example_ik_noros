@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 from __future__ import print_function
 import signal
-import pyexotica as exo
-from pyexotica.publish_trajectory import sig_int_handler
+import pyexotica._pyexotica as exo
+from pyexotica_modules.publish_trajectory import sig_int_handler
 from numpy import array
 import numpy as np
 import math

@@ -1,6 +1,6 @@
 import unittest
 
-import pyexotica as exo
+import pyexotica._pyexotica as exo
 
 class OMPLLockedBoundsCase(unittest.TestCase):
 

@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 from __future__ import print_function
 import rospy
-import pyexotica as exo
+import pyexotica._pyexotica as exo
 import math
 import numpy as np
 import signal
 import exotica_core_task_maps_py
-from pyexotica.publish_trajectory import publish_pose, sig_int_handler
+from pyexotica_modules.publish_trajectory import publish_pose, sig_int_handler
 import exotica_scipy_solver
 
 def figure_eight(t):

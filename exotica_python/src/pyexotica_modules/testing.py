@@ -2,7 +2,7 @@
 from __future__ import print_function, division
 
 import numpy as np
-import pyexotica as exo
+import pyexotica._pyexotica as exo
 import sys
 
 __all__ = ["check_dynamics_solver_derivatives"]

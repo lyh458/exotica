@@ -2,7 +2,7 @@
 
 import roslib
 import unittest
-import pyexotica as exo
+import pyexotica._pyexotica as exo
 PKG = 'exotica_examples'
 roslib.load_manifest(PKG)  # This line is not needed with Catkin.
 

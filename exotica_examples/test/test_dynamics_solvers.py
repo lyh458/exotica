@@ -2,7 +2,7 @@
 # coding: utf-8
 import roslib
 import unittest
-from pyexotica.testing import check_dynamics_solver_derivatives
+from pyexotica_modules.testing import check_dynamics_solver_derivatives
 
 PKG = 'exotica_examples'
 roslib.load_manifest(PKG)  # This line is not needed with Catkin.
