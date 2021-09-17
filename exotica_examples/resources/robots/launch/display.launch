@@ -1,0 +1,13 @@
+<launch>
+
+  <arg name="use_rviz" default="true" doc="Choose whether or not to use rviz."/>
+  <arg name="use_gui" default="true" doc="Choose whether or not to use gui."/>
+
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find exotica_examples)/resources/robots/lwr_simplified.urdf'" />
+  
+  <!-- bring up robot description, joint and robot state publishers (also can start rviz) -->
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" unless="$(arg use_gui)" />
+  <node name="joint_state_publisher" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" if="$(arg use_gui)" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find exotica_examples)/resources/robots/launch/urdf.rviz" required="true" />
+</launch>
