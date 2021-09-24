@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#coding=utf-8
 
 import pyexotica._pyexotica as exo
 from pyexotica_modules.publish_trajectory import *
@@ -11,10 +12,10 @@ def handle_attaching(i, x, scene):
     if i == 0:
         # Reset object pose
         scene.attach_object_local(
-            'Item', '', exo.KDLFrame([0.61, -0.3, 0.5, 0, 0, 0, 1]))
+            'Item', '', exo.KDLFrame([0.73, -0.4, 0.35, 0, 0, 0, 1]))
     if i == 1:
         # Attach to end effector
-        scene.attach_object('Item', 'iiwa_link_6')
+        scene.attach_object('Item', 'iiwa_link_7')
     if i == 2:
         # Detach
         scene.detach_object('Item')
@@ -27,13 +28,17 @@ ompl = exo.Setup.load_solver(
     '{exotica_examples}/resources/configs/example_manipulate_ompl.xml')
 
 # Plan 3 end poses
-ik.get_problem().set_rho('Position1', 1e2)
+## 设置Unconstrained End-Pose Problem公式中定义的rho
+ik.get_problem().set_rho('Position1', 1e2)  
 ik.get_problem().set_rho('Position2', 0)
+## 利用ik求解，然后数组->列表？
 goal_pose = [ik.solve()[0].tolist()]
 ik.get_problem().set_rho('Position1', 0)
 ik.get_problem().set_rho('Position2', 1e2)
 goal_pose.append(ik.solve()[0].tolist())
+## 添加一个值全为0的goal_pose，总共三个goal_pose(左，右，0)，对应三个start_pose(0，左，右)，0->左，左->右，右->0
 goal_pose.append([0]*len(goal_pose[0]))
+## 三个start_pose(0，左，右)
 start_pose = [[0]*len(goal_pose[0]), goal_pose[0], goal_pose[1]]
 
 # Plan 3 trajectories
