@@ -77,7 +77,7 @@ class TestClass(unittest.TestCase):
     def test_creation(self):
         scene_conf = {'URDF': "{exotica_examples}/resources/robots/iiwa7.urdf",
                       'SRDF': "{exotica_examples}/resources/robots/iiwa7.srdf",
-                      'JointGroup': "arm"}
+                      'JointGroup': "manipulator"}
 
         # create scene with URDF frames
         scene1 = exo.Setup.create_scene(('exotica/Scene', scene_conf))

@@ -11,7 +11,7 @@
       </Scene>
     </PlanningScene>
     <Maps>
-      <EffFrame Name="Position1">
+      <EffFrame Name="Position1">信息
         <EndEffector>
           <Frame Link="iiwa_link_7" BaseOffset="0.7 -0.4 0.35 0 0 0 1" LinkOffset="0 0 0.2 0 -0.707 0 0.707"/>
         </EndEffector>

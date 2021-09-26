@@ -19,7 +19,7 @@
         </EffPosition>
         <EffOrientation Name="Orientation">
             <EndEffector>
-                <Frame Link="iiwa_link_7" LinkOffset="0 0 0 0.7071067811865476 -4.3297802811774664e-17  0.7071067811865475 4.3297802811774664e-17"/>
+                <Frame Link="iiwa_link_7" LinkOffset="0 0 0 0 -0.707 0 0.707"/>
             </EndEffector>
         </EffOrientation>
     </Maps>
@@ -48,7 +48,7 @@
         </EffPosition>
         <EffOrientation Name="Orientation">
             <EndEffector>
-                <Frame Link="iiwa_link_7" LinkOffset="0 0 0 0.7071067811865476 -4.3297802811774664e-17  0.7071067811865475 4.3297802811774664e-17"/>
+                <Frame Link="iiwa_link_7" LinkOffset="0 0 0 0 -0.707 0 0.707"/>
             </EndEffector>
         </EffOrientation>
     </Maps>
@@ -75,7 +75,7 @@
     <Maps>
         <Distance Name="Distance">
             <EndEffector>
-                <Frame Link="iiwa_link_7" LinkOffset="0 0 0.1 0.7071067811865476 -4.3297802811774664e-17  0.7071067811865475 4.3297802811774664e-17" BaseOffset="0.35 -0.2 0.9 0 0 0 1"/>
+                <Frame Link="iiwa_link_7" LinkOffset="0 0 0.1 0 -0.707 0 0.707" BaseOffset="0.35 -0.2 0.9 0 0 0 1"/>
             </EndEffector>
         </Distance>
     </Maps>
@@ -131,7 +131,7 @@
         </EffPosition>
         <EffOrientation Name="Orientation">
             <EndEffector>
-                <Frame Link="iiwa_link_7" LinkOffset="0 0 0 0.7071067811865476 -4.3297802811774664e-17  0.7071067811865475 4.3297802811774664e-17"/>
+                <Frame Link="iiwa_link_7" LinkOffset="0 0 0 0 -0.707 0 0.707"/>
             </EndEffector>
         </EffOrientation>
     </Maps>
@@ -160,7 +160,7 @@
         </EffPosition>
         <EffOrientation Name="Orientation">
             <EndEffector>
-                <Frame Link="iiwa_link_7" LinkOffset="0 0 0 0.7071067811865476 -4.3297802811774664e-17  0.7071067811865475 4.3297802811774664e-17"/>
+                <Frame Link="iiwa_link_7" LinkOffset="0 0 0 0 -0.707 0 0.707"/>
             </EndEffector>
         </EffOrientation>
     </Maps>
@@ -191,7 +191,7 @@
         </EffPosition>
         <EffOrientation Name="Orientation">
             <EndEffector>
-                <Frame Link="iiwa_link_7" LinkOffset="0 0 0 0.7071067811865476 -4.3297802811774664e-17  0.7071067811865475 4.3297802811774664e-17"/>
+                <Frame Link="iiwa_link_7" LinkOffset="0 0 0 0 -0.707 0 0.707"/>
             </EndEffector>
         </EffOrientation>
     </Maps>
@@ -228,7 +228,7 @@
         </EffPosition>
         <EffOrientation Name="Orientation">
             <EndEffector>
-                <Frame Link="iiwa_link_7" LinkOffset="0 0 0 0.7071067811865476 -4.3297802811774664e-17  0.7071067811865475 4.3297802811774664e-17"/>
+                <Frame Link="iiwa_link_7" LinkOffset="0 0 0 0 -0.707 0 0.707"/>
             </EndEffector>
         </EffOrientation>
     </Maps>

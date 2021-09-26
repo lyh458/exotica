@@ -16,7 +16,7 @@
     <Maps>
       <EffFrame Name="Position">
         <EndEffector>
-          <Frame Link="iiwa_link_7" LinkOffset="0 0 0 0.7071067811865476 -4.3297802811774664e-17  0.7071067811865475 4.3297802811774664e-17"/>
+          <Frame Link="iiwa_link_7" LinkOffset="0 0 0 0 -0.707 0 0.707"/>
         </EndEffector>
       </EffFrame>
       <EffBox Name="EffBox" Debug="1">

@@ -65,7 +65,7 @@ public:
 private:
     double g_ = 9.81;  ///!< Gravity (m/s^2)
     double m_ = 1.0;   ///!< Mass at the end of the pendulum
-    double l_ = 1.0;   ///!< Length of the arm
+    double l_ = 1.0;   ///!< Length of the manipulator
     double b_ = 0.0;   ///!< Friction coefficient
 };
 }  // namespace exotica
